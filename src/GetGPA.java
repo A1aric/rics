@@ -27,7 +27,7 @@
 
 		public static void readDataFromJson(String s) throws FileNotFoundException {
 
-			JsonReader file = new JsonReader(new FileReader("/Users/ric/Desktop/generic.json"));
+			JsonReader file = new JsonReader(new FileReader("src/generic.json"));
 			Gson gson = new Gson();
 			List<CourseInfo> rs = new ArrayList<CourseInfo>();
 			Type type = new TypeToken<ArrayList<CourseInfo>>() {
